@@ -1,0 +1,81 @@
+body {
+	background-color: #ffdc95;
+}
+
+h1 {
+	text-align: center;
+	color: #ff3c26;
+	margin-top: 3%;
+	font-family: impact;
+}
+
+img {
+	margin: auto;
+	height: 10em;
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	padding: 10px;
+	font-family: helvetica;
+}
+
+.burger-container {
+	background-color: white;
+	font-family: courier;
+	width: 30em;
+    height: 3em;
+    margin-top: 2.5em; 
+    margin-left: 2em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.devour-container {
+	position: absolute;
+ 	margin-left: 42.5%;
+    margin-top: -50px;
+}
+
+.consumed-container {
+    margin-left: 60%;
+    margin-top: -3%;
+    background-color: white;
+    font-family: times;
+    color: #474243;
+    max-width: 30%;
+    border: 1px solid #474243;
+}
+
+#ca {
+	position: absolute;
+    margin-left: 32.5%;
+    margin-top: 50px;
+    height: 15%;
+    width: 30%;
+}
+
+#newBurger-submit {
+	position: absolute;
+ 	margin-left: 45%;
+    margin-top: -60px;
+    top: 115%;
+    color: white;
+    background-color: #1f2780;
+    font-style: bold; 
+}
+
+h3 {
+	text-align: center;
+	font-family: helvetica;
+	color: #1f2780;
+	position: absolute;
+	top: 110%;
+	left: 37%;
+
+}

@@ -1,53 +1,41 @@
-<h1>BURGERS!</h1>
+<h1>EAT-DA-BURGER!</h1>
 
-<h2>Ready to feast!</h2>
+<img src="/assets/img/burger_image.jpg" alt="big juicy burger">
 
 <ul>
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>
-        {{this.burger_name}}
-
+      <div class="burger-container">
+        {{this.id}}. {{this.burger_name}}
+      </div>
+      <div class="devour-container">
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
           <button type="submit">DEVOUR!</button>
         </form>
+      </div>
       </li>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers you've consumed fatty!</h2>
-
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
+    <div class="consumed-container">
       <li>
         {{this.burger_name}}
-
-        {{!-- <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="sleepy" value="false">
-          <button type="submit">WAKE UP!</button>
-        </form>
-         --}}
       </li>
+    </div>
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Make a new Burger!</h2>
 <form class="create-update-form" action="/" method="POST">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  {{!-- <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
-
-  <button type="submit">Add Burger</button>
-</form>
+        <div class="form-group">
+            <input type="textarea" id="ca" name="name">
+        </div>
+        <button type="submit" id="newBurger-submit">Add Burger</button>
+        <h3>Create the Burger of your Fansties</h3>
+    </form>
