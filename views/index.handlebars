@@ -20,22 +20,24 @@
   {{/each}}
 </ul>
 
+<div id="burger-wrapper">
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
     <div class="consumed-container">
       <li>
-        {{this.burger_name}}
+        {{this.id}}. {{this.burger_name}}
       </li>
     </div>
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
 <form class="create-update-form" action="/" method="POST">
         <div class="form-group">
             <input type="textarea" id="ca" name="name">
         </div>
         <button type="submit" id="newBurger-submit">Add Burger</button>
-        <h3>Create the Burger of your Fansties</h3>
+        <h3>Create the Burger of your wildest dreams!</h3>
     </form>

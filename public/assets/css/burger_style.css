@@ -38,13 +38,13 @@ button {
 
 .devour-container {
 	position: absolute;
- 	margin-left: 42.5%;
+ 	margin-left: 43.5%;
     margin-top: -50px;
 }
 
 .consumed-container {
     margin-left: 60%;
-    margin-top: -3%;
+    margin-top: 0%;
     background-color: white;
     font-family: times;
     color: #474243;
@@ -54,16 +54,20 @@ button {
 
 #ca {
 	position: absolute;
-    margin-left: 32.5%;
-    margin-top: 50px;
+    margin-left: 34%;
+    margin-top: 0%;
+	top: 90%;
     height: 15%;
     width: 30%;
+    font-family: courier;
+    font-size: 150%;
+	text-align: center;
 }
 
 #newBurger-submit {
 	position: absolute;
- 	margin-left: 45%;
-    margin-top: -60px;
+ 	margin-left: 46%;
+    margin-top: -59px;
     top: 115%;
     color: white;
     background-color: #1f2780;
@@ -78,4 +82,11 @@ h3 {
 	top: 110%;
 	left: 37%;
 
+}
+
+#burger-wrapper {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 100%;
 }
